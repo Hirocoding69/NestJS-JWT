@@ -2,7 +2,7 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { EntityManager } from 'typeorm'; 
-import { Token } from 'src/modules/tokens/token-blacklist.entity';
+import { Token } from 'src/modules/tokens/token.entity';
 import { Request } from 'express';
 import { User } from 'src/modules/users/user.entity';
 import { createHash } from 'crypto';

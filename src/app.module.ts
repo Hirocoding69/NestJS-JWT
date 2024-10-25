@@ -12,6 +12,7 @@ import { TokenModule } from './modules/tokens/token.module';
 import { AuthController } from './modules/auth/auth.controller';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { DatabaseConfigModule } from './config/database.config';
+import { RefreshTokenModule } from './refresh-token/refresh-token.module';
 import * as Joi from 'joi';
 
 @Module({
@@ -28,6 +29,7 @@ import * as Joi from 'joi';
     AuthModule,
     RolesModule,
     TokenModule,
+    RefreshTokenModule,
   ],
   controllers: [AppController, UsersController, RolesController, AuthController],
   providers: [

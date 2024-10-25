@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EntityManager } from 'typeorm';
-import { Token } from './token-blacklist.entity';
+import { Token } from './token.entity';
 import { User } from 'src/modules/users/user.entity';
 import { createHash } from 'crypto';
 
