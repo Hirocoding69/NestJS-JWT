@@ -1,6 +1,6 @@
 import { Exclude } from 'class-transformer';
 import { Role } from 'src/modules/roles/roles.entity';
-import { Token } from 'src/modules/tokens/token-blacklist.entity';
+import { Token } from 'src/modules/tokens/token.entity';
 import { Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn, Unique } from 'typeorm';
 
 @Entity('users')

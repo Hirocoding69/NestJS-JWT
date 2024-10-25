@@ -1,7 +1,7 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { EntityManager } from 'typeorm';
 import { User } from './user.entity';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { Request }from '@nestjs/common';
 @Controller('users')
 export class UsersController {
